@@ -1,0 +1,44 @@
+.aonmenu {
+  /*background-image: url('/images/nav_profile.png');*/
+  border: 2px solid black; 
+  height:50px;
+  background-color: red; 
+}
+.headerred {
+    color: #fff!important;
+    background-color: #f44336!important;
+    text-align: left;
+        padding: 0.01em 16px;
+    
+}
+
+.recentppl {
+     
+    text-align: center!important;
+   margin-top:-37px;
+}
+.clearimg{
+  float: right;
+  margin-top:-32px;
+}
+
+.searchintro{
+ 
+  text-align: center;
+  margin-top:60px;
+
+}
+
+.searchintrotext{
+  color: #003f72;
+  font-family: sans-serif;
+  font-weight: bold;
+
+}
+
+.recentppldetails
+{
+  margin-left:-40px;
+  font-weight: bold;
+}
+

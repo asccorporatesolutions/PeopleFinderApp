@@ -1,4 +1,5 @@
 const path = require('path');
+const noopServiceWorkerMiddleware = require('react-dev-utils/noopServiceWorkerMiddleware');
 module.exports = {
   context: path.resolve(__dirname, './src'),
 
@@ -11,6 +12,13 @@ module.exports = {
     filename: "app.js",
     path: __dirname + "/static",
   },
+ devServer: {
+
+      inline: true,
+      port: 8888     
+
+   }, 
+
 
   resolve: {
     extensions: ['', '.js', '.jsx', '.json'],
@@ -28,6 +36,23 @@ module.exports = {
         test: /\.html$/,
         loader: "file?name=[name].[ext]",
       },
+
+{
+  test: /\.css$/,
+  loader: 'style-loader'
+}, {
+  test: /\.css$/,
+  loader: 'css-loader',
+  query: {
+    modules: true,
+    localIdentName: '[name]__[local]___[hash:base64:5]'
+  }
+},
+    {
+      test:/\.(png|jpg)$/,
+      exclude:/node_modules/,
+      loader:"url-loader?limit=100000"
+    }
     ],
   },
    setup(app) {
@@ -39,6 +64,6 @@ module.exports = {
       // it used the same host and port.
       // https://github.com/facebookincubator/create-react-app/issues/2272#issuecomment-302832432
       console.log("Hi");
-     // app.use(noopServiceWorkerMiddleware());
+      app.use(noopServiceWorkerMiddleware());
     },
 }

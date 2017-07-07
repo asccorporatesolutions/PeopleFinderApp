@@ -1,0 +1,55 @@
+.wrapper {
+  margin-right: 200px;
+
+}
+.content {
+  float: left;
+  width: 100%;
+  /*background-color: #CCF;*/
+}
+.img{
+  float:left;
+  padding-bottom:10px;
+  padding-right:10px;
+}
+.sidebar {
+  float: right;
+  width: 200px;
+  margin-right: -200px;
+  /*background-color: #FFA;*/
+}
+.cleared {
+  clear: both;
+}
+.name
+{
+  font-size:18px;
+  font-weight: bold;
+
+  color:black;
+}
+.designation
+{
+  font-size:14px;
+  font-weight: 500;
+
+  color:gray!important;
+}
+.location
+{
+   font-size:12px;
+  font-weight: 500;
+
+  color:gray;
+}
+.header
+{color:red ; font-weight:bold; font-size:16px;margin-top: 5px}
+.contents{ color:gray;font-size:14px;margin-bottom: 10px;}
+
+.userinfo{
+  float:left;
+  padding-top:10px;
+}
+.AddToContacts{
+  width:100%;
+}
