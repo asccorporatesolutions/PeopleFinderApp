@@ -4,6 +4,7 @@ import { Router, Route, hashHistory, IndexRoute, NotFoundRoute  } from 'react-ro
 import LoginScreen from 'Components/LoginScreen.Component.jsx';
 import SplashScreen from 'Components/SplashScreen.Component.jsx'; 
 import SearchScreen from 'Components/SearchScreen.Component.jsx'; 
+import SearchResults from 'Components/SearchResults.Component.jsx'; 
 import NotFound from 'Components/NotFound.Component.jsx'; 
 import Main from 'Components/Main.Component.jsx'; 
 import MyProfile from 'Components/MyProfile.Component.jsx';
@@ -32,8 +33,10 @@ ReactDOM.render(
         <Route path = "contact" component = {Contact} />
         <Route path="settings" component = {Settings}/>
         <Route path="tnc" component = {TnC}/>
+        <Route path="searchresults" component={SearchResults}/>
        <Route path = "*" component={NotFound} />
     </Route>
+    
   </Router>,
   document.getElementById('root') 
 );

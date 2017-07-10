@@ -12,7 +12,7 @@ import stylecss from '../../static/css/Search.css';
 import launchimg from '../../static/images/aonmenu.png';
 import menu from '../../static/css/Menu.css';
 //import AlarmIcon from 'react-material-icons/icons/action/alarm';
-import MaterialIcon from 'react-google-material-icons'
+import MaterialIcon from 'react-google-material-icons';
 import menusearch from '../../static/images/nav_search.png';
 import menuprofile from '../../static/images/nav_profile.png';
 
@@ -69,15 +69,15 @@ class Main extends React.Component {
     </Navigation>
                     </NavDrawer>
                 <Panel>
-                    <AppBar theme={theme} title='People Finder' leftIcon='menu' onLeftIconClick={this.toggleDrawerActive} >
+                    <AppBar className={theme.data} theme={theme} title='People Finder' leftIcon='menu' onLeftIconClick={this.toggleDrawerActive} >
                         <Navigation type='horizontal' >
                             
                       
                        
                          <img src={aonlogo} height="25" style={search1}/>
-                         <img src={navsearch} height="25" style={search1}  />
+                         <Link to="searchresults"><img src={navsearch} height="25" style={search1}  /></Link>
                         </Navigation></AppBar>
-                    <div style={{ flex: 1, overflowY: 'auto', padding: '1.8rem' }}>
+                    <div>
                                    {this.props.children}         
                     </div>
                 </Panel>

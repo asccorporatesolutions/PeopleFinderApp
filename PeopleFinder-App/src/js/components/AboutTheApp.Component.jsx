@@ -5,7 +5,8 @@ import ReactDOM from 'react-dom';
 class AboutTheApp extends React.Component {
   render() {
     return (        
-        <div>        
+        <div>   
+                
             <div>PeopleFinderVersion 1.0</div><br/>
 <div>
 Features:
