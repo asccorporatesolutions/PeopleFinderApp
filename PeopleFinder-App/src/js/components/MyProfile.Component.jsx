@@ -56,7 +56,7 @@ class ProfileData extends React.Component {
  <OrgChart/>   
 </div> 
        <br/> <span className={profile.name}> Gaurav Saxena </span>
-      <br/> <span className={profile.title}> Developer </span>
+      <br/> <span className={profile.title}> Manager II </span>
        <br/> <span className={profile.bu}> Aon Service Corporation </span>
         <br/> <span className={profile.location}><img src={locationicon}/><span className={profile.city}> Gurgaon</span> </span>
        

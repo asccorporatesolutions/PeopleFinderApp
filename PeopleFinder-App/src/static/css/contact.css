@@ -1,6 +1,11 @@
 .wrapper {
-  margin-right: 200px;
-
+  
+width:100%;
+}
+.hrrule{
+  color:#d9dbdc!important;
+  position:relative;
+  top:-11px;
 }
 .content {
   float: left;
@@ -11,6 +16,8 @@
   float:left;
   padding-bottom:10px;
   padding-right:10px;
+  max-height:100px;
+  max-width:100px;
 }
 .sidebar {
   float: right;
@@ -51,5 +58,68 @@
   padding-top:10px;
 }
 .AddToContacts{
-  width:100%;
+     
+    border: 2px;
+    border-radius: 7px;
+    border: 2px solid #003f72;    
+    height: 63px;    
+    margin: 0px 20px 10px 20px;    
+    padding:10px;
+}
+
+.AddToContacts div{
+vertical-align: middle;
+
+
+}
+.AddToContactsimg{
+display: table-cell;
+}
+.AddToContactstext{
+padding-left: 10px;  
+    color: #003f72;
+    display: table-cell;
+}
+
+.AddToContactsdiv{
+display: table;
+margin: 0 auto;
+}
+
+.detailheader{
+padding-top:15px;
+    color: #9fa1a4;
+    margin-left:20px;
+    padding-bottom: 15px;
+}
+
+.details{
+padding-left:20px;
+display:table;
+width:100%;
+}
+
+.details div{
+vertical-align: middle;
+display: table-cell;
+}
+
+.leftdetails{
+display: table-cell; 
+
+}
+
+.rightimg{
+       
+    padding-right:20px;
+    float: right;
+    
+}
+
+.detailsubheader{
+color:#e11b22;
+}
+
+.actualdetail{
+
 }

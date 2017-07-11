@@ -5,13 +5,14 @@ import actionbarclose from '../../static/images/actionbar_close.png';
 import MaterialIcon from 'react-google-material-icons';
 import { List, ListItem, ListSubHeader, ListDivider, ListCheckbox } from 'react-toolbox/lib/list';
 import listprofile from '../../static/images/listProfile@2x.png';
+import {hashHistory} from 'react-router';
 
 class SearchResults extends React.Component {
   render() {
     return (        
         <div>
         
-         <SearchHeader/>       
+         <SearchHeader/>   
         
          <NotSearched/>
           <Results/>
@@ -26,10 +27,10 @@ class SearchHeader extends React.Component {
     return (        
         <div className={search.searchHeader}>
         {/*<MaterialIcon className={search.backarrow} icon="arrow_back"/>*/}
-        <span className={search.backarrow}><i className="material-icons">arrow_back</i></span>
-         <input className={search.searchBox} type="text" placeholder="Search..."/>
+        <div className={search.headcomp}><span onClick={hashHistory.goBack} className={search.backarrow}><i className="material-icons">arrow_back</i></span></div>
+         <div className={search.headcomp1}><input className={search.searchBox} type="text" placeholder="Search..."/></div>
          
-         <img src={actionbarclose} className={search.closeimg} />
+         <div className={search.headcomp2}><img src={actionbarclose} className={search.closeimg} /></div>
          </div>      
     );
   }

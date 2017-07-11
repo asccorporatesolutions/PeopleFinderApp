@@ -54,9 +54,9 @@ class RecentData extends React.Component {
       <div className="headerred">
      </div>
   <List ripple >
-    <div>
-    <ListSubHeader className={search.recentppl} caption='RECENTLY VIEWED PEOPLE' />
-<img className={search.clearimg} src={clearrecent} height={15}/>
+    <div className={search.parentdiv}>
+   <div className={search.recentdiv}> <ListSubHeader className={search.recentppl} caption='RECENTLY VIEWED PEOPLE' /></div>
+<div className={search.cleardiv}><img className={search.clearimg} src={clearrecent} height={15}/></div>
     </div>
     <div className={search.recentppldetails}>
     <ListItem

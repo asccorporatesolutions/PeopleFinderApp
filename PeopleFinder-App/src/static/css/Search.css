@@ -19,8 +19,7 @@
 }
 .clearimg{
   float: right;
-  margin-top:-32px;
-  margin-right:20px;
+ 
 }
 
 .searchintro{
@@ -44,35 +43,32 @@
 }
 
 .searchHeader{
-  background-color: #DA3B19; /*DA3B19*/
-  position:relative;
+  background-color: #DA3B19; /*DA3B19*/  
   height:64px;
   width:100%;
- margin-top:10px;
+display: table;
+ position: absolute;
+    top: 0;
 }
 
 .searchBox{
 background-color: #DA3B19;
 font-family:sans-serif;
 color:white;
-margin-left:60px;
-
-margin-top:20px;
+width:100%;
 border:0;
 }
 
 .closeimg{
   height:12px;
-  margin-right:30px;
-  margin-top:24px;
+  
   float:right;
 
 }
 
 .backarrow > i{
   color:white;
-  margin-left: 10px;  
-  margin-top: 20px;
+ 
 }
 
 .searchcount{
@@ -91,5 +87,57 @@ border:0;
 }
 :-moz-placeholder { /* Firefox 18- */
   color: pink;
+}
+
+.headcomp{
+width: 5%;
+    padding-left: 20px;
+    max-width: 62px;
+    min-width: 60px;
+}
+
+.headcomp1{
+
+}
+
+.headcomp2{
+width: 5%;
+    padding-right: 20px;
+    max-width: 62px;
+    min-width: 60px;
+}
+
+.searchHeader > div{
+display: table-cell;
+vertical-align: middle;
+}
+
+.headcomp1 input:focus {
+    outline: none!important;
+    outline-color: -webkit-focus-ring-color;
+    outline-style: auto;
+    outline-width: 5px;
+}
+
+.parentdiv{
+width:100%;
+display:table;
+}
+
+.parentdiv div{
+display:table-cell;
+
+
+}
+
+.recentdiv{
+padding-left:50px;
+
+}
+.cleardiv{
+
+width:5%;
+padding-right: 36px;
+float:right;
 }
 
