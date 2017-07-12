@@ -49,25 +49,25 @@ class Results extends React.Component {
     <ListSubHeader className={search.searchcount} caption='3 People' />
 
     </div>
-    <div className={search.recentppldetails}>
+     <div className={search.recentppldetails}>
     <ListItem
-      avatar={listprofile}
-      caption='Amit Kumar'
+      avatar={person1}
+      caption='Damon Wilson'
       legend="Developer" 
      
     />
     
     <ListDivider />
     <ListItem
-      avatar='https://static.asc.aon.net/pfimages/temp_ABB55201ah82492_LThumb.jpg'
-      caption='Gaurav Saxena'
+      avatar={person2}
+      caption='Lily Water'
       legend='Manager'
      
     />
      <ListDivider  />
     <ListItem
-      avatar='https://static.asc.aon.net/pfimages/temp_ABB55201ah0156166_LThumb.jpg'
-      caption='Rahul Verma 2'
+      avatar={person3}
+      caption='Alan Salvatore'
       legend='Tester'
      
     /> 

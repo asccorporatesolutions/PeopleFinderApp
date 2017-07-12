@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, hashHistory, IndexRoute, NotFoundRoute  } from 'react-router';
+import reset from '../static/css/reset.css';
 import LoginScreen from 'Components/LoginScreen.Component.jsx';
 import SplashScreen from 'Components/SplashScreen.Component.jsx'; 
 import SearchScreen from 'Components/SearchScreen.Component.jsx'; 

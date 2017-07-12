@@ -69,14 +69,14 @@ class Main extends React.Component {
     </Navigation>
                     </NavDrawer>
                 <Panel>
-                    <AppBar className={theme.data} theme={theme} title='People Finder' leftIcon='menu' onLeftIconClick={this.toggleDrawerActive} >
+                     <AppBar className={theme.data} theme={theme} title='People Finder' leftIcon='menu' onLeftIconClick={this.toggleDrawerActive} >
                         <Navigation type='horizontal' >
                             
                       
                        
                          <img src={aonlogo} height="25" style={search1}/>
                          <Link to="searchresults"><img src={navsearch} height="25" style={search1}  /></Link>
-                        </Navigation></AppBar>
+                        </Navigation></AppBar> 
                     <div>
                                    {this.props.children}         
                     </div>

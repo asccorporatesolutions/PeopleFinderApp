@@ -2,18 +2,23 @@
   
 width:100%;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> PM
 .hrrule{
   color:#d9dbdc!important;
   position:relative;
   top:-11px;
 }
 .content {
-  float: left;
+  
   width: 100%;
   /*background-color: #CCF;*/
 }
 .img{
-  float:left;
+  display: inline-block;
+  vertical-align: top;
   padding-bottom:10px;
   padding-right:10px;
   max-height:100px;
@@ -30,7 +35,7 @@ width:100%;
 }
 .name
 {
-  font-size:18px;
+  
   font-weight: bold;
 
   color:black;
@@ -54,7 +59,8 @@ width:100%;
 .contents{ color:gray;font-size:14px;margin-bottom: 10px;}
 
 .userinfo{
-  float:left;
+ display:inline-block;
+ vertical-align: top;
   padding-top:10px;
 }
 .AddToContacts{
@@ -74,6 +80,7 @@ vertical-align: middle;
 }
 .AddToContactsimg{
 display: table-cell;
+<<<<<<< HEAD
 }
 .AddToContactstext{
 padding-left: 10px;  
@@ -122,4 +129,95 @@ color:#e11b22;
 
 .actualdetail{
 
+=======
+}
+.AddToContactstext{
+padding-left: 10px;  
+    color: #003f72;
+    display: table-cell;
+}
+
+.AddToContactsdiv{
+display: table;
+margin: 0 auto;
+}
+
+.detailheader{
+padding-top:15px;
+    color: #9fa1a4;
+    margin-left:20px;
+    padding-bottom: 15px;
+    
+}
+
+.details{
+padding-left:20px;
+display:table;
+width:100%;
+}
+
+.details div{
+vertical-align: middle;
+display: table-cell;
+}
+
+.leftdetails{
+display: table-cell; 
+
+}
+
+.rightimg{
+       
+    padding-right:8px;
+    float: right;
+    
+    
+}
+
+.detailsubheader{
+color:#e11b22;
+
+}
+
+.actualdetail{
+
+}
+
+.headcomp{
+width: 5%;
+    padding-left: 20px;
+    max-width: 62px;
+    min-width: 60px;
+}
+
+.headcomp1{
+color:white;
+padding-left: 35px;
+}
+
+.headcomp2{
+width: 5%;
+    padding-right: 20px;
+    max-width: 62px;
+    min-width: 60px;
+}
+
+.searchHeader > div{
+display: table-cell;
+vertical-align: middle;
+}
+
+.searchHeader{
+  background-color: #DA3B19; /*DA3B19*/  
+  height:64px;
+  width:100%;
+display: table;
+ position: absolute;
+    top: 0;
+}
+
+.backarrow > i{
+  color:white;
+ 
+>>>>>>> PM
 }
