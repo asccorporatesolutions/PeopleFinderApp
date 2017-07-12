@@ -6,7 +6,7 @@ class AboutTheApp extends React.Component {
   render() {
     return (        
         <div>   
-                
+             
             <div>PeopleFinderVersion 1.0</div><br/>
 <div>
 Features:

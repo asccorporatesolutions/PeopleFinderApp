@@ -5,13 +5,14 @@ import actionbarclose from '../../static/images/actionbar_close.png';
 import MaterialIcon from 'react-google-material-icons';
 import { List, ListItem, ListSubHeader, ListDivider, ListCheckbox } from 'react-toolbox/lib/list';
 import listprofile from '../../static/images/listProfile@2x.png';
+import {hashHistory} from 'react-router';
 
 class SearchResults extends React.Component {
   render() {
     return (        
         <div>
         
-         <SearchHeader/>       
+         <SearchHeader/>   
         
          <NotSearched/>
           <Results/>
@@ -26,10 +27,10 @@ class SearchHeader extends React.Component {
     return (        
         <div className={search.searchHeader}>
         {/*<MaterialIcon className={search.backarrow} icon="arrow_back"/>*/}
-        <span className={search.backarrow}><i className="material-icons">arrow_back</i></span>
-         <input className={search.searchBox} type="text" placeholder="Search..."/>
+        <div className={search.headcomp}><span onClick={hashHistory.goBack} className={search.backarrow}><i className="material-icons">arrow_back</i></span></div>
+         <div className={search.headcomp1}><input className={search.searchBox} type="text" placeholder="Search..."/></div>
          
-         <img src={actionbarclose} className={search.closeimg} />
+         <div className={search.headcomp2}><img src={actionbarclose} className={search.closeimg} /></div>
          </div>      
     );
   }
@@ -48,25 +49,25 @@ class Results extends React.Component {
     <ListSubHeader className={search.searchcount} caption='3 People' />
 
     </div>
-    <div className={search.recentppldetails}>
+     <div className={search.recentppldetails}>
     <ListItem
-      avatar={listprofile}
-      caption='Amit Kumar'
+      avatar={person1}
+      caption='Damon Wilson'
       legend="Developer" 
      
     />
     
     <ListDivider />
     <ListItem
-      avatar='https://static.asc.aon.net/pfimages/temp_ABB55201ah82492_LThumb.jpg'
-      caption='Gaurav Saxena'
+      avatar={person2}
+      caption='Lily Water'
       legend='Manager'
      
     />
      <ListDivider  />
     <ListItem
-      avatar='https://static.asc.aon.net/pfimages/temp_ABB55201ah0156166_LThumb.jpg'
-      caption='Rahul Verma 2'
+      avatar={person3}
+      caption='Alan Salvatore'
       legend='Tester'
      
     /> 

@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, hashHistory, IndexRoute, NotFoundRoute  } from 'react-router';
+import reset from '../static/css/reset.css';
 import LoginScreen from 'Components/LoginScreen.Component.jsx';
 import SplashScreen from 'Components/SplashScreen.Component.jsx'; 
 import SearchScreen from 'Components/SearchScreen.Component.jsx'; 
@@ -16,6 +17,9 @@ import TnC from 'Components/TnC.Component.jsx'
 import App from 'views/App';
 import Home from 'views/Home';
 import About from 'views/About';
+
+
+
 const noopServiceWorkerMiddleware = require('react-dev-utils/noopServiceWorkerMiddleware');
 noopServiceWorkerMiddleware();
 import registerServiceWorker from './registerServiceWorker';
@@ -25,6 +29,7 @@ ReactDOM.render(
     <Route path='/' component={ Main }>
       <IndexRoute component={ SearchScreen } />
       <Route path='about' component={ AboutTheApp } />
+      <Route path="searchresults" component={SearchResults}/>
        <Route path = "splash" component = {SplashScreen} />
         <Route path = "login" component = {LoginScreen} />
         <Route path = "search" component = {SearchScreen} />
@@ -32,8 +37,7 @@ ReactDOM.render(
         <Route path = "orgchart" component = {OrgChart} />
         <Route path = "contact" component = {Contact} />
         <Route path="settings" component = {Settings}/>
-        <Route path="tnc" component = {TnC}/>
-        <Route path="searchresults" component={SearchResults}/>
+        <Route path="tnc" component = {TnC}/>        
        <Route path = "*" component={NotFound} />
     </Route>
     
